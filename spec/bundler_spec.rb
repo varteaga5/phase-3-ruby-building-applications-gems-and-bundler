@@ -24,7 +24,7 @@ describe "Bundler" do
 
     # http://bundler.io/v1.3/gemfile.html
     it "lists the sinatra gem with the specific version 2.0.2" do
-      expect(gemfile_text =~ /gem ['"]sinatra['"], ?['"]v?2\.0\.2['"]/).not_to eq(nil)
+      expect(gemfile_text =~ /gem ['"]sinatra['"], ?['" ]v?2\.0\.2['"]/).not_to eq(nil)
     end
 
     # http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator
